@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Músicas para você 💜</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --roxo-claro: #f3eaff;
+      --roxo-medio: #9b6bff;
+      --roxo-escuro: #2a0d4e;
+      --texto: #2b2b2b;
+      --card: #ffffffd9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f7f0ff, #e9ddff);
+      color: var(--texto);
+      overflow-x: hidden;
+    }
+    .card {
+      background: linear-gradient(135deg, #2a0d4e 70%, #1d063a 100%);
+      color: #fff;
+      border-radius: 36px;
+      padding: 48px 40px 40px 40px;
+      box-shadow: 0 25px 70px rgba(75, 0, 130, 0.18);
+      max-width: 900px;
+      margin: 80px auto;
+      border: 2px solid #fff2;
+    }
+    .highlight { color: #ffe066; font-weight: 600; }
+    .open-btn {
+      display: inline-block;
+      margin: 8px 0 0;
+      background: var(--roxo-medio);
+      color: #fff;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 32px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 8px 30px rgba(155,107,255,0.18);
+      font-size: 1.15rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .open-btn:hover, .open-btn:focus {
+      background: var(--roxo-escuro);
+      transform: translateY(-2px) scale(1.04);
+      outline: none;
+    }
+    .nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px;
+      justify-content: center;
+    }
+    h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 35px; text-align: center; color: #fff; }
+    .signature { text-align: center; margin-top: 18px; font-style: italic; color: #fff; }
+    .secret { margin-top: 45px; font-size: 0.85rem; opacity: 0.55; cursor: pointer; text-align: center; }
+    .secret-message { display: none; margin-top: 15px; font-style: italic; color: #ffe066; text-align: center; }
+  </style>
+  <script>
+    function showSecret() {
+      document.querySelector('.secret-message').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>E, para finalizar, umas duas músicas que eu dedico com todo meu coração pra você, que são:</h2>
+    <div style="max-width:560px;margin:40px auto 0;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/BUkLAdb6D9s" frameborder="0" allowfullscreen style="border-radius:18px;"></iframe>
+    </div>
+    <div style="max-width:560px;margin:40px auto 0;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/KXwftNuuVJo" frameborder="0" allowfullscreen style="border-radius:18px;"></iframe>
+    </div>
+    <p style="margin-top:28px; text-align:center;">Espero que tenha gostado disso, meu amor. <span class="highlight">Feliz Ano Novo</span>! Que passemos mais anos novos juntinhos e juntos de verdade.</p>
+    <div class="signature">
+      <p>De: <span class="highlight">Manuela</span></p>
+      <p>Para: <span class="highlight">Hyan</span></p>
+    </div>
+    <div class="nav">
+      <a href="3.html" class="open-btn">Voltar</a>
+    </div>
+    <script>
+      // Permite navegação por teclado: seta esquerda = voltar
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+          window.location.href = '3.html';
+        }
+      });
+    </script>
+    <div class="secret" onclick="showSecret()">ps:</div>
+    <div class="secret-message">Se você chegou até aqui, é porque já faz parte de mim.</div>
+  </div>
+</body>
+</html>

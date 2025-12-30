@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Doramas e a gente 💜</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --roxo-claro: #f3eaff;
+      --roxo-medio: #9b6bff;
+      --roxo-escuro: #2a0d4e;
+      --texto: #2b2b2b;
+      --card: #ffffffd9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f7f0ff, #e9ddff);
+      color: var(--texto);
+      overflow-x: hidden;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 30px;
+      padding: 45px;
+      box-shadow: 0 25px 70px rgba(75, 0, 130, 0.15);
+      max-width: 900px;
+      margin: 80px auto;
+    }
+    .highlight { color: var(--roxo-medio); font-weight: 500; }
+    .video-block { margin-top: 65px; }
+    video { width: 100%; margin-top: 25px; border-radius: 26px; box-shadow: 0 20px 55px rgba(42, 13, 78, 0.35); }
+    .open-btn {
+      display: inline-block;
+      margin: 8px 0 0;
+      background: var(--roxo-medio);
+      color: #fff;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 32px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 8px 30px rgba(155,107,255,0.18);
+      font-size: 1.15rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .open-btn:hover, .open-btn:focus {
+      background: var(--roxo-escuro);
+      transform: translateY(-2px) scale(1.04);
+      outline: none;
+    }
+    .nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px;
+      justify-content: center;
+    }
+    h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 35px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Quando eu vejo a gente em outras histórias</h2>
+    <div class="video-block">
+      <p>E também quero falar dos <span class="highlight">doramas</span>, os que eu vejo a gente... E também quero ver com você né, porque sim, você vai ver todos eles comigo. Então, vamos começar com os meus queridos <span class="highlight">Zhang Lurang e Su Zaizai</span>.</p>
+      <video src="vídeo 1.mov" controls></video>
+    </div>
+    <div class="video-block">
+      <p>Outro que eu também vejo é o <span class="highlight">Hidden Love</span>, que são a <span class="highlight">Sang Zhi</span> e o <span class="highlight">Duan Jiaxu</span>.</p>
+      <video src="vídeo 2.mov" controls></video>
+    </div>
+    <div class="video-block">
+      <p>E, por último, os meus favoritos de todos os tempos: <span class="highlight">Wei Zhi</span> e <span class="highlight">Shan Chong</span>, que também vejo muito a gente neles.</p>
+      <video src="vídeo 3.mov" controls></video>
+      <p style="text-align:center;">Claro que tem muitos outros, mas esses três são os principais para mim, os que eu mais amo e que quero dedicar pra você. Eles que, você querendo ou não, ainda vamos ver todos os doramas juntos.</p>
+    </div>
+    <div class="nav">
+      <a href="2.html" class="open-btn">Voltar</a>
+      <a href="4.html" class="open-btn">Próximo</a>
+    </div>
+    <script>
+      // Permite navegação por teclado: seta esquerda = voltar, seta direita = próximo
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+          window.location.href = '2.html';
+        } else if (e.key === 'ArrowRight') {
+          window.location.href = '4.html';
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
